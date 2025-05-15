@@ -3,6 +3,7 @@ using MassTransit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
+using Test;
 
 namespace AuthenticationApi.Controllers
 {
@@ -22,9 +23,9 @@ namespace AuthenticationApi.Controllers
         
         [HttpPost]
         [Route("sendtoadmin")]
-        public async Task<IActionResult> SendToAdmin(Common common)
+        public async Task<IActionResult> SendToAdmin(CommonTest common)
         {
-            await _publishEndpoint.Publish<Common>(common);
+            await _publishEndpoint.Publish<CommonTest>(common);
             return Ok("This data is for all users.");
         }
         [HttpPost]

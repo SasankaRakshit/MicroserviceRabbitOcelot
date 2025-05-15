@@ -1,6 +1,5 @@
 ﻿using MassTransit;
 using MassTransit.Testing;
-using Microservice.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

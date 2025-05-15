@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonClass
+namespace Test
 {
-    public class Common
+    public class CommonTest
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
